@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заполнения заявки</title>
+</head>
+<body>
+<h1>Форма заполнения заявки</h1>
+
+<form>
+    <label for="queue-number">Номер в очереди:</label><br>
+    <input type="text" id="queue-number" name="queue-number"><br><br>
+
+    <label for="name">Ваше имя:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="card-number">Номер карты:</label><br>
+    <input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"><br><br>
+
+    <label for="pin-code">Pin код карты:</label><br>
+    <input type="password" id="pin-code" name="pin-code" placeholder="символы скрыты от глаз"><br><br>
+
+    <label for="birth-year">Год рождения:</label><br>
+    <input type="text" id="birth-year" name="birth-year"  placeholder="1996"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@mail.com"><br><br>
+
+    <button type="button">Я являюсь юр.лицом</button><br><br>
+    <button type="submit">Зарезервировать очередь</button>
+    <button type="reset">Отмена</button>
+</form>
+
+<div style="border: 1px solid black; padding: 10px; margin-top: 20px;">
+    <h2>Подписка на рассылку</h2>
+    <form>
+        <label for="subscribe-email">Email:</label><br>
+        <input type="email" id="subscribe-email" name="subscribe-email" placeholder="example@mail.com"><br><br>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Хочу получать рассылку</label><br><br>
+
+        <label for="gender">Выбор пола:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select><br><br>
+
+        <button type="submit" style="width: 170px; background-color: purple; color: white;">Отправить</button>
+    </form>
+</div>
+</body>
+</html>

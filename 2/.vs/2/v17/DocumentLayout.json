@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\Student\\web\\1\\",
+  "WorkspaceRootPath": "D:\\Code\\Student\\web\\2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Student\\web\\1\\main.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\Student\\web\\2\\main.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -32,13 +32,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.html",
-              "DocumentMoniker": "D:\\Code\\Student\\web\\1\\main.html",
+              "DocumentMoniker": "D:\\Code\\Student\\web\\2\\main.html",
               "RelativeDocumentMoniker": "main.html",
-              "ToolTip": "D:\\Code\\Student\\web\\1\\main.html*",
+              "ToolTip": "D:\\Code\\Student\\web\\2\\main.html*",
               "RelativeToolTip": "main.html*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-06T11:11:34.893Z",
+              "WhenOpened": "2025-01-06T12:03:07.092Z",
               "EditorCaption": ""
             }
           ]
