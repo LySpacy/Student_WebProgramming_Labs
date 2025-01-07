@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Table</title>
+</head>
+<body>
+<h1>Все в одной таблице</h1>
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%;">
+    <tr>
+        <!-- Первый столбик -->
+        <td rowspan="3" style="vertical-align: top;">
+            <p>Текст в первой ячейке</p>
+            <audio controls>
+                <source src="sound.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент аудио.
+            </audio>
+            <br>
+            <img src="cat.jpg" alt="Картинка" style="width: 100%; max-width: 200px;">
+            <p>Текст под картинкой</p>
+        </td>
+
+        <!-- Второй столбик -->
+        <td>
+            <ul>
+                <li>Элемент списка 1</li>
+                <li>Элемент списка 2</li>
+                <li>Элемент списка 3</li>
+            </ul>
+        </td>
+        <!-- Третий столбик -->
+        <td>
+            <table border="2" cellpadding="5" cellspacing="2" style="width: 100%;">
+                <tr>
+                    <td>Текст 1</td>
+                    <td>Текст 2</td>
+                </tr>
+                <tr>
+                    <td>Текст 3</td>
+                    <td>Текст 4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Текст 5</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <iframe src="https://yandex.md/maps/10317/tiraspol/?ll=29.623925%2C46.842015&z=13.37"
+                    style="width: 100%; height: 200px;"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+        </td>
+        <td>
+            <iframe src="https://makler.md/ru"
+                    style="width: 100%; height: 200px;"
+                    frameborder="0">
+            </iframe>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Текст статьи</p>
+        </td>
+        <td>
+            <p>Текст с симентическими тегами</p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
