@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 8px;
+    width: 100%;
+}
+
+.product-card {
+    width: 350px;
+    border: 1px solid purple;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-label {
+    font-size: 15px;
+    color: #d9534f;
+    border: 1px dashed #d9534f;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container svg {
+    cursor: pointer;
+    transition: stroke 0.2s ease-in-out;
+}
+
+.icon-container svg:hover {
+    stroke: #d9534f;
+}
+
+.product-image {
+    margin: 16px 0;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Стили для овалов */
+.price-badge .oval {
+    display: inline-block;
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #aaa;
+    border-radius: 50px;
+    text-align: center;
+    white-space: normal; /* Позволяет тексту переноситься */
+    line-height: 1.4; /* Добавляет немного пространства между строками */
+}
+
+.product-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 16px 0;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.left-text {
+    font-size: 18px;
+    color: #333;
+    flex: 1;
+}
+
+.right-text {
+    text-align: right;
+    flex: 1;
+}
+
+.right-text .strikethrough {
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: line-through;
+    display: block;
+    font-weight: 100;
+}
+
+.right-text p {
+    color: purple;
+    margin: 4px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.highlighted-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buy-button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #aa66cc;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #884499;
+}
+
+.footer-note {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 16px;
+    text-decoration: underline;
+}
+
