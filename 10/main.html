@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Определение времени года</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+<h1>Определение времени года по номеру месяца</h1>
+<p>Введите номер месяца (от 1 до 12):</p>
+<input type="number" id="monthInput" min="1" max="12" placeholder="Введите номер месяца">
+<button onclick="determineSeason()">Определить время года</button>
+<div id="output"></div>
+
+<script>
+  function determineSeason() {
+    const month = parseInt(document.getElementById('monthInput').value);
+    const output = document.getElementById('output');
+
+    if (isNaN(month) || month < 1 || month > 12) {
+      output.textContent = "Пожалуйста, введите корректный номер месяца от 1 до 12.";
+      output.style.color = "red";
+      return;
+    }
+
+    let season;
+
+    switch (month) {
+      case 12:
+      case 1:
+      case 2:
+        season = "Зима";
+        break;
+      case 3:
+      case 4:
+      case 5:
+        season = "Весна";
+        break;
+      case 6:
+      case 7:
+      case 8:
+        season = "Лето";
+        break;
+      case 9:
+      case 10:
+      case 11:
+        season = "Осень";
+        break;
+    }
+
+    output.textContent = `Месяц ${month} соответствует времени года: ${season}.`;
+    output.style.color = "green";
+  }
+</script>
+</body>
+</html>
