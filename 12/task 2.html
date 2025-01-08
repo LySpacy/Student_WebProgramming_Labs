@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переключение классов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        #classDiv {
+            width: 300px;
+            height: 100px;
+            background-color: lightgray;
+            line-height: 100px;
+            text-align: center;
+            margin: 20px auto;
+            transition: all 0.3s ease;
+        }
+        .active {
+            background-color: lightgreen;
+            color: white;
+            font-size: 20px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+<h1>Переключение классов</h1>
+<div id="classDiv">Это элемент div</div>
+<button id="toggleClassButton">Переключить класс</button>
+<script>
+    const div = document.getElementById('classDiv');
+    const button = document.getElementById('toggleClassButton');
+
+    button.addEventListener('click', () => {
+        div.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

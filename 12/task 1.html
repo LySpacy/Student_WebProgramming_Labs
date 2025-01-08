@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изменение стиля элемента</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 10px;
+    }
+    #styledDiv {
+      width: 300px;
+      height: 100px;
+      background-color: lightgray;
+      font-size: 16px;
+      line-height: 100px;
+      text-align: center;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+<h1>Изменение стиля элемента</h1>
+<div id="styledDiv">Это элемент div</div>
+<button id="changeStyleButton">Изменить стиль</button>
+<script>
+  const div = document.getElementById('styledDiv');
+  const button = document.getElementById('changeStyleButton');
+
+  let isStyled = false; // Флаг, который отслеживает текущий стиль
+
+  button.addEventListener('click', () => {
+    if (isStyled) {
+      // Если флаг установлен, сбросить стиль
+      div.style.backgroundColor = 'lightgray';
+      div.style.fontSize = '16px';
+      div.style.color = 'black';
+    } else {
+      // Если флаг не установлен, применить новый стиль
+      div.style.backgroundColor = 'lightblue';
+      div.style.fontSize = '24px';
+      div.style.color = 'darkblue';
+    }
+
+    // Переключаем флаг
+    isStyled = !isStyled;
+  });
+</script>
+</body>
+</html>
